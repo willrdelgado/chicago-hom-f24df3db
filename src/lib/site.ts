@@ -10,58 +10,55 @@ export const SITE = {
   tagline: 'We Buy Houses In Chicago "As-Is" For CASH!',
 };
 
-// Cloud-storage URLs (downloaded from the reference site)
+// Cloud-storage URLs (generated real-estate imagery)
 export const ASSETS = {
-  logo: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/wKqULOnOuAfh82vWbYiH/media/6428b148ab34287349533e50.png",
   heroHouse:
-    "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/dlZuusMIC75MKBPcUqpB/media/4cb1d186-41fa-4d00-a7d5-2805911720e8.jpeg",
+    "https://vibe.filesafe.space/1794668445398164664/assets/3fc84898-443f-4409-9739-242bb7b48ea9.png",
   aboutPhoto:
-    "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/wKqULOnOuAfh82vWbYiH/media/645a605d40ce03bda4b60003.jpeg",
+    "https://vibe.filesafe.space/1794668445398164664/assets/97d8189b-da2d-475d-8675-7f154cdb039f.png",
   teamPhoto:
-    "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/dlZuusMIC75MKBPcUqpB/media/0953d2e3-8f0f-4c2a-9d07-d6156b111ea7.jpeg",
+    "https://vibe.filesafe.space/1794668445398164664/assets/97d8189b-da2d-475d-8675-7f154cdb039f.png",
   step1:
-    "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/dlZuusMIC75MKBPcUqpB/media/3a30e97c-e7cc-4539-8d23-370d3c1272ba.png",
+    "https://vibe.filesafe.space/1794668445398164664/assets/1dfdef33-eb99-4bb9-949c-df4b0a1299e7.png",
   step2:
-    "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/wKqULOnOuAfh82vWbYiH/media/6429aebcf2c7c2bb1248757f.png",
+    "https://vibe.filesafe.space/1794668445398164664/assets/02e20c41-db87-424c-b925-058f67827644.png",
   step3:
-    "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/dlZuusMIC75MKBPcUqpB/media/0f15e7b5-e7b4-4682-b015-ffcec1de9e00.png",
+    "https://vibe.filesafe.space/1794668445398164664/assets/804101e3-a90b-409c-91e9-28cc31fc82b8.png",
   step4:
-    "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/wKqULOnOuAfh82vWbYiH/media/6429afa1ab3428d48653999a.png",
-  avatar:
-    "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/dlZuusMIC75MKBPcUqpB/media/f38f4e7a-bda8-4922-b572-932156222ee1.png",
+    "https://vibe.filesafe.space/1794668445398164664/assets/f89d2c7d-5f4e-4d31-b436-46d59ed1df5c.png",
 };
 
 export const SITUATIONS = [
   {
-    img: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/wKqULOnOuAfh82vWbYiH/media/642a22f1f2c7c204e048b766.png",
+    img: "https://vibe.filesafe.space/1794668445398164664/assets/269ff471-d53a-482e-87a8-024b6b5c5fe1.png",
     title: "Looking to sell the property as-is",
   },
   {
-    img: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/wKqULOnOuAfh82vWbYiH/media/642a23967500843c92cdd0a6.png",
+    img: "https://vibe.filesafe.space/1794668445398164664/assets/14199679-480e-4f6f-bc10-e29fec0e62c3.png",
     title: "Inherited property you can't keep",
   },
   {
-    img: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/wKqULOnOuAfh82vWbYiH/media/642a230a7500841cc4cdd047.png",
+    img: "https://vibe.filesafe.space/1794668445398164664/assets/dcd7e1e6-3776-4a05-affd-2800a3fc9f6f.png",
     title: "Financial distress, medical bills or foreclosure",
   },
   {
-    img: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/wKqULOnOuAfh82vWbYiH/media/642a23e3f2c7c2fce948b7e2.png",
+    img: "https://vibe.filesafe.space/1794668445398164664/assets/1632d7f7-4211-4ac1-a5e3-22c6a92f415d.png",
     title: "Structural issues, unpermitted work or condemned houses",
   },
   {
-    img: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/wKqULOnOuAfh82vWbYiH/media/642a2325ab34289d3a53deef.png",
+    img: "https://vibe.filesafe.space/1794668445398164664/assets/9e87ac16-17c1-4ed8-91cf-ce52d36e1e88.png",
     title: "Sudden or unexpected life events",
   },
   {
-    img: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/wKqULOnOuAfh82vWbYiH/media/642a23f1750084ff00cdd129.png",
+    img: "https://vibe.filesafe.space/1794668445398164664/assets/6c58069c-e277-4eff-bde7-6249f3afc219.png",
     title: "Damage from natural disasters",
   },
   {
-    img: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/wKqULOnOuAfh82vWbYiH/media/642a24ccab342801b753dfcc.png",
+    img: "https://vibe.filesafe.space/1794668445398164664/assets/108db6ea-4370-4465-8277-1577f5126239.png",
     title: "Downsizing or relocation due to retirement",
   },
   {
-    img: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/wKqULOnOuAfh82vWbYiH/media/642a2498f2c7c293cf48b86c.png",
+    img: "https://vibe.filesafe.space/1794668445398164664/assets/0c04e764-7ef3-4740-a486-db25a8a02b70.png",
     title: "Vacant or problematic rental property",
   },
 ];
@@ -69,21 +66,29 @@ export const SITUATIONS = [
 export const TESTIMONIALS = [
   {
     name: "Sarah K.",
+    avatar:
+      "https://vibe.filesafe.space/1794668445398164664/assets/3461a02c-ff0e-4bec-80a9-be5c02e40b33.png",
     quote:
       "I couldn't believe how easy it was to sell my home with this company. They took care of everything and made the process so simple.",
   },
   {
     name: "Mike S.",
+    avatar:
+      "https://vibe.filesafe.space/1794668445398164664/assets/463189bc-79be-42cd-8517-ce3f4e93c764.png",
     quote:
       "I was really impressed with how quickly they were able to make me an offer and close on my home. I would definitely recommend them to anyone looking to sell their home.",
   },
   {
     name: "Lisa T.",
+    avatar:
+      "https://vibe.filesafe.space/1794668445398164664/assets/7aeff352-a28c-4172-88ea-5852cd266433.png",
     quote:
       "I was hesitant at first about selling my home to a company, but they were so professional and made me a fair offer. I'm so glad I decided to go with them.",
   },
   {
     name: "Billy J.",
+    avatar:
+      "https://vibe.filesafe.space/1794668445398164664/assets/9278fd30-7d5a-435f-8165-c36dcacf90cf.png",
     quote:
       "I had a difficult situation and needed to sell my home fast. This company was able to make me an offer within days and close on the sale in a few weeks. They really saved me a lot of stress and hassle.",
   },

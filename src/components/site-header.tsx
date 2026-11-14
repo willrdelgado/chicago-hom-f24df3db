@@ -1,7 +1,7 @@
 import { Link, useLocation } from "@tanstack/react-router";
 import { useState } from "react";
-import { Menu, X, Phone } from "lucide-react";
-import { SITE, ASSETS, NAV_LINKS } from "@/lib/site";
+import { Menu, X, Phone, Home } from "lucide-react";
+import { SITE, NAV_LINKS } from "@/lib/site";
 
 export function Header() {
   const [open, setOpen] = useState(false);
@@ -10,8 +10,18 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-card/95 backdrop-blur supports-[backdrop-filter]:bg-card/80">
       <div className="container-page flex h-20 items-center justify-between gap-4">
-        <Link to="/" className="flex shrink-0 items-center gap-2" aria-label={SITE.name}>
-          <img src={ASSETS.logo} alt={`${SITE.name} logo`} className="h-11 w-auto" loading="lazy" />
+        <Link to="/" className="flex shrink-0 items-center gap-2.5" aria-label={SITE.name}>
+          <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-brand-gradient text-primary-foreground shadow-brand">
+            <Home className="h-6 w-6" style={{ color: "var(--gold)" }} />
+          </span>
+          <span className="flex flex-col leading-none">
+            <span className="text-lg font-extrabold tracking-tight text-foreground">
+              WeBuy<span style={{ color: "var(--brand)" }}>Chicago</span>Houses
+            </span>
+            <span className="text-[10px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
+              Cash For Your Home
+            </span>
+          </span>
         </Link>
 
         <nav className="hidden items-center gap-1 lg:flex">

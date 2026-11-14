@@ -145,7 +145,7 @@ function Testimonials() {
             >
               <div className="flex items-center gap-3">
                 <img
-                  src={ASSETS.avatar}
+                  src={t.avatar}
                   alt={t.name}
                   className="h-12 w-12 rounded-full object-cover"
                   loading="lazy"
