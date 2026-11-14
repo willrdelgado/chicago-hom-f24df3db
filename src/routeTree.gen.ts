@@ -10,33 +10,116 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as ContactUsRouteImport } from './routes/contact-us'
+import { Route as FrequentlyAskedQuestionsRouteImport } from './routes/frequently-asked-questions'
+import { Route as GetAnOfferNowRouteImport } from './routes/get-an-offer-now'
+import { Route as PrivacyRouteImport } from './routes/privacy'
+import { Route as ReviewsRouteImport } from './routes/reviews'
+import { Route as TermsOfServiceRouteImport } from './routes/terms-of-service'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ContactUsRoute = ContactUsRouteImport.update({
+  id: '/contact-us',
+  path: '/contact-us',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FrequentlyAskedQuestionsRoute =
+  FrequentlyAskedQuestionsRouteImport.update({
+    id: '/frequently-asked-questions',
+    path: '/frequently-asked-questions',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const GetAnOfferNowRoute = GetAnOfferNowRouteImport.update({
+  id: '/get-an-offer-now',
+  path: '/get-an-offer-now',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PrivacyRoute = PrivacyRouteImport.update({
+  id: '/privacy',
+  path: '/privacy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ReviewsRoute = ReviewsRouteImport.update({
+  id: '/reviews',
+  path: '/reviews',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TermsOfServiceRoute = TermsOfServiceRouteImport.update({
+  id: '/terms-of-service',
+  path: '/terms-of-service',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/contact-us': typeof ContactUsRoute
+  '/frequently-asked-questions': typeof FrequentlyAskedQuestionsRoute
+  '/get-an-offer-now': typeof GetAnOfferNowRoute
+  '/privacy': typeof PrivacyRoute
+  '/reviews': typeof ReviewsRoute
+  '/terms-of-service': typeof TermsOfServiceRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/contact-us': typeof ContactUsRoute
+  '/frequently-asked-questions': typeof FrequentlyAskedQuestionsRoute
+  '/get-an-offer-now': typeof GetAnOfferNowRoute
+  '/privacy': typeof PrivacyRoute
+  '/reviews': typeof ReviewsRoute
+  '/terms-of-service': typeof TermsOfServiceRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/contact-us': typeof ContactUsRoute
+  '/frequently-asked-questions': typeof FrequentlyAskedQuestionsRoute
+  '/get-an-offer-now': typeof GetAnOfferNowRoute
+  '/privacy': typeof PrivacyRoute
+  '/reviews': typeof ReviewsRoute
+  '/terms-of-service': typeof TermsOfServiceRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/contact-us'
+    | '/frequently-asked-questions'
+    | '/get-an-offer-now'
+    | '/privacy'
+    | '/reviews'
+    | '/terms-of-service'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/contact-us'
+    | '/frequently-asked-questions'
+    | '/get-an-offer-now'
+    | '/privacy'
+    | '/reviews'
+    | '/terms-of-service'
+  id:
+    | '__root__'
+    | '/'
+    | '/contact-us'
+    | '/frequently-asked-questions'
+    | '/get-an-offer-now'
+    | '/privacy'
+    | '/reviews'
+    | '/terms-of-service'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  ContactUsRoute: typeof ContactUsRoute
+  FrequentlyAskedQuestionsRoute: typeof FrequentlyAskedQuestionsRoute
+  GetAnOfferNowRoute: typeof GetAnOfferNowRoute
+  PrivacyRoute: typeof PrivacyRoute
+  ReviewsRoute: typeof ReviewsRoute
+  TermsOfServiceRoute: typeof TermsOfServiceRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +131,59 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/contact-us': {
+      id: '/contact-us'
+      path: '/contact-us'
+      fullPath: '/contact-us'
+      preLoaderRoute: typeof ContactUsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/frequently-asked-questions': {
+      id: '/frequently-asked-questions'
+      path: '/frequently-asked-questions'
+      fullPath: '/frequently-asked-questions'
+      preLoaderRoute: typeof FrequentlyAskedQuestionsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/get-an-offer-now': {
+      id: '/get-an-offer-now'
+      path: '/get-an-offer-now'
+      fullPath: '/get-an-offer-now'
+      preLoaderRoute: typeof GetAnOfferNowRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/privacy': {
+      id: '/privacy'
+      path: '/privacy'
+      fullPath: '/privacy'
+      preLoaderRoute: typeof PrivacyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/reviews': {
+      id: '/reviews'
+      path: '/reviews'
+      fullPath: '/reviews'
+      preLoaderRoute: typeof ReviewsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/terms-of-service': {
+      id: '/terms-of-service'
+      path: '/terms-of-service'
+      fullPath: '/terms-of-service'
+      preLoaderRoute: typeof TermsOfServiceRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  ContactUsRoute: ContactUsRoute,
+  FrequentlyAskedQuestionsRoute: FrequentlyAskedQuestionsRoute,
+  GetAnOfferNowRoute: GetAnOfferNowRoute,
+  PrivacyRoute: PrivacyRoute,
+  ReviewsRoute: ReviewsRoute,
+  TermsOfServiceRoute: TermsOfServiceRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
